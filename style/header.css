@@ -1,0 +1,191 @@
+    .header {
+        height: 55px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        border-bottom-width: 1px;
+        border-style: solid;
+        border-color: rgb(228, 228, 228);
+        z-index: 100;
+    }
+
+    .left-section {
+        width: 220px;
+        display: flex;
+        align-items: center;
+    }
+    .hamburger-menu {
+        height: 24px;
+        margin-top: 1px;
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+    .yt-logo {
+        height: 20px;
+    }
+
+    .middle-section {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        max-width: 460px;
+        margin-left: 22px;
+        margin-right: 60px;
+    }
+
+    .search-bar {
+        flex: 1;   
+        width: 0; 
+        padding-top: 12px;
+        padding-bottom: 9.5px;
+        font-size: 16px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: rgb(195, 195, 195);
+        border-radius: 2px;
+        box-shadow: inset 1px 1px 1px rgba(0,0,0, 0.08);
+    }
+    .search-bar::placeholder {
+        font-family: Roboto;
+        color: rgb(150, 147, 147);
+        font-size: 17px;
+        padding-left: 10px;
+
+    }
+    .search-button {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: -1px;
+        border-width: 1px;
+        border-style: solid;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+        border-color: rgb(195, 195, 195);
+        background-color: rgb(242, 242, 242);
+      
+    }
+    .search-logo {
+        height: 24px;
+        padding-top: 2px;
+    }
+
+    .voice-search-logo {
+        height: 24px;
+
+    }
+    .voice-search-button {
+        background-color: rgb(244, 244, 244);
+        padding: 8px 9px 8px 9px;
+        border: none;
+        border-radius: 20px;
+        margin-left: 8px;
+    }
+    
+
+    .search-button,
+    .voice-search-button {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .search-button .tooltip,
+    .voice-search-button .tooltip {
+        position: absolute;
+        font-family: Roboto,Arial;
+        font-size: 12px;
+        background-color: rgb(115, 113, 113);
+        color: white;
+        padding: 4px 8px 5px 8px;
+        border-radius: 2px;
+        bottom: -30px;
+        opacity: 0;
+        transition: opacity 0.15s;
+        pointer-events: none;
+        white-space: nowrap;
+    }
+    .search-button:hover .tooltip,
+    .voice-search-button:hover .tooltip {
+        opacity: 1;
+    }
+
+
+    .right-section {
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+        flex-shrink: 0;
+    }
+    .upload-logo {
+        height: 24px;
+    }
+    .apps-logo {
+        height: 24px;
+    }
+    .notifications-icon {
+        position: relative;
+        margin-top: 1px;
+    }
+    .notifications-logo {
+        height: 24px;
+    }
+    .notifications-count{
+        background-color: red;
+        color: white;
+        position: absolute;
+        font-family: Roboto,Arial;
+        font-size: 12px;
+        font-weight: 500;
+        padding: 1px 4px 1px 4px;
+        border-radius: 8px;
+        top: -1px;
+        right: -3px;
+    }
+    .account-profile-logo {
+        height: 30px;
+        border-radius: 16px;
+        margin-right: 8px;
+        margin-bottom: 4px;
+    }
+
+    .upload-icon ,
+    .apps-icon ,
+    .notifications-icon {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .upload-icon .tooltip,
+    .apps-icon .tooltip,
+    .notifications-icon .tooltip {
+        position: absolute;
+        font-family: Roboto,Arial;
+        font-size: 12px;
+        background-color: rgb(115, 113, 113);
+        color: white;
+        padding: 4px 8px 5px 8px;
+        border-radius: 2px;
+        bottom: -30px;
+        opacity: 0;
+        transition: opacity 0.15s;
+        pointer-events: none;
+        white-space: nowrap;
+    }
+    .upload-icon:hover .tooltip,
+    .apps-icon:hover .tooltip,
+    .notifications-icon:hover .tooltip {
+        opacity: 1;
+    }

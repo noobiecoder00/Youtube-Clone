@@ -1,0 +1,34 @@
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 55px;
+    bottom: 0;
+    width: 72px;
+    background-color: white;
+    align-items: center;
+    z-index: 200;
+}
+.sidebar-icons {
+    height: 72px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 6px;
+    line-height: 12px;
+}
+.sidebar-icons:hover {
+    background-color: rgb(233, 231, 231);
+    cursor: pointer;
+}
+.home ,
+.explore ,
+.subscriptions ,
+.originals ,
+.youtube-music ,
+.library {
+    height: 24px;
+    padding-bottom: 4px;
+    padding-top: 16px;
+}
+
